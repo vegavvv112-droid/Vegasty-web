@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#a91d2b">
+<title>Vegasty • Roblox Public Profile</title>
+<style>
+:root{--bg:#100b10;--panel:#1b131a;--panel2:#241922;--red:#c72e40;--red2:#8e1828;--blue:#102c63;--blue2:#17428c;--text:#f7f1f5;--muted:#b9aab5;--line:#3b2835;--good:#54d6a0;--bad:#ff7888}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#32111e 0,#100b10 55%);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--text)}
+.wrap{max-width:1050px;margin:auto;padding:22px 16px 60px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:24px}.brand{display:flex;align-items:center;gap:12px;font-weight:850;font-size:21px;letter-spacing:.3px}.logo{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,#e24452,#74162a);box-shadow:0 8px 30px #a91d2b55;font-weight:900}.tag{font-size:12px;color:#ffd8df;border:1px solid #74313f;padding:6px 10px;border-radius:999px;background:#35131d}
+.hero{padding:28px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(135deg,#29141fdd,#171018f2);box-shadow:0 20px 60px #0005}.eyebrow{color:#ff8997;text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:800}.hero h1{font-size:clamp(28px,5vw,42px);line-height:1.1;margin:9px 0 10px}.hero p{color:var(--muted);max-width:680px;margin:0 0 22px}
+.search{display:flex;gap:10px;max-width:720px}.search input{min-width:0;flex:1;background:#100b10;border:1px solid #55303f;border-radius:12px;padding:14px 15px;color:white;font-size:15px;outline:none}.search input:focus{border-color:#e64a5d;box-shadow:0 0 0 3px #e64a5d22}
+button,.btn{border:0;border-radius:12px;background:linear-gradient(135deg,var(--blue2),var(--blue));color:white;padding:13px 18px;font-weight:800;font-size:14px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:transform .15s,filter .15s}button:hover,.btn:hover{filter:brightness(1.2);transform:translateY(-1px)}button:disabled{opacity:.55;cursor:wait;transform:none}
+.note{font-size:12px;color:var(--muted);margin-top:12px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:16px}.card{background:linear-gradient(160deg,#211721,#171018);border:1px solid var(--line);border-radius:18px;padding:18px;min-width:0}.profile{grid-column:span 12;display:flex;align-items:center;gap:18px}.avatar{width:100px;height:100px;border-radius:20px;background:#2b1a28;object-fit:cover;border:1px solid #593342}.profile-main{flex:1;min-width:0}.profile h2{font-size:23px;margin:0 0 1px;overflow-wrap:anywhere}.username{color:#f18b9a}.sub{color:var(--muted);font-size:13px;overflow-wrap:anywhere}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:15px}.stat{background:#120d13;border:1px solid #392634;border-radius:12px;padding:12px}.stat span{display:block;font-size:11px;color:var(--muted);margin-bottom:4px}.stat strong{font-size:14px;overflow-wrap:anywhere}.half{grid-column:span 6}.full{grid-column:span 12}.card h3{margin:0 0 12px;font-size:15px}.row{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #352431}.row:last-child{border-bottom:0}.row span{color:var(--muted)}.pill{display:inline-block;border-radius:8px;background:#2d1723;color:#ffbac4;padding:4px 8px;font-size:11px;font-weight:800}.empty{padding:28px 15px;text-align:center;color:var(--muted);border:1px dashed #513444;border-radius:14px}.status{margin-top:14px;padding:11px 13px;border-radius:11px;background:#171018;border:1px solid var(--line);color:var(--muted);font-size:13px}.status.error{color:#ffc0c7;border-color:#823243}.status.ok{color:#b5ffdc;border-color:#286b52}.hidden{display:none!important}.footer{margin-top:22px;color:#8f7f8b;font-size:12px;text-align:center}.skeleton{height:12px;border-radius:8px;background:#332330;margin:10px 0}.warn{color:#f2c9d0}
+@media(max-width:650px){.wrap{padding:14px 12px 40px}.hero{padding:20px}.top{align-items:flex-start}.tag{max-width:145px;text-align:center}.search{flex-direction:column}.search button{width:100%}.half{grid-column:span 12}.profile{align-items:flex-start;flex-wrap:wrap}.avatar{width:82px;height:82px}.profile-main{width:calc(100% - 100px)}.stats{grid-template-columns:1fr}.stats .stat{display:flex;align-items:center;justify-content:space-between;gap:10px}.stats .stat span{margin:0}.stats .stat strong{text-align:right}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><div class="logo">V</div><span>VEGASTY</span></div>
+    <div class="tag">PUBLIC PROFILE ANALYZER</div>
+  </header>
+  <section class="hero">
+    <div class="eyebrow">ROBLOX • PUBLIC DATA</div>
+    <h1>Account Lookup</h1>
+    <p>Look up a Roblox username and view public profile details. No password, browser cookie, or login session is requested.</p>
+    <form class="search" id="lookupForm">
+      <input id="username" autocomplete="off" spellcheck="false" placeholder="Enter Roblox username…" maxlength="40" required>
+      <button id="lookupBtn" type="submit">⌕ &nbsp; Check account</button>
+    </form>
+    <div class="note">Use the exact Roblox username, not a password or cookie. Results depend on Roblox public API availability.</div>
+    <div id="status" class="status" role="status">Ready. Enter a username to begin.</div>
+  </section>
+  <section id="results" class="grid hidden" aria-live="polite">
+    <div class="card profile">
+      <img id="avatar" class="avatar" alt="Roblox avatar" src="">
+      <div class="profile-main">
+        <h2 id="displayName">—</h2>
+        <div class="username" id="handle">@—</div>
+        <div class="sub" id="userId">User ID: —</div>
+        <div class="sub" id="created">Created: —</div>
+      </div>
+      <a id="profileLink" class="btn" target="_blank" rel="noopener noreferrer">Open profile ↗</a>
+      <div class="stats full">
+        <div class="stat"><span>Public profile</span><strong id="profileState">Found</strong></div>
+        <div class="stat"><span>Friends / followers</span><strong>Not queried</strong></div>
+        <div class="stat"><span>Account session</span><strong>Not accessed</strong></div>
+      </div>
+    </div>
+    <div class="card half"><h3>Profile description</h3><div id="description" class="sub">—</div></div>
+    <div class="card half"><h3>Account details</h3>
+      <div class="row"><span>Username</span><strong id="detailUsername">—</strong></div>
+      <div class="row"><span>Display name</span><strong id="detailDisplay">—</strong></div>
+      <div class="row"><span>Created</span><strong id="detailCreated">—</strong></div>
+      <div class="row"><span>Verified badge</span><strong id="verified">Not provided</strong></div>
+    </div>
+    <div class="card half"><h3>Inventory & accessories</h3><div class="empty">Inventory values are not included in this public profile lookup.</div></div>
+    <div class="card half"><h3>Avatar items</h3><div class="empty">Korblox, Headless, animations, and item ownership need a separate supported data source.</div></div>
+    <div class="card full"><h3>Security note</h3><p class="sub">This page only requests public profile information. It never asks for a password, .ROBLOSECURITY cookie, recovery code, or two-factor code.</p></div>
+  </section>
+  <div class="footer">VEGASTY • Unofficial fan-made tool • Not affiliated with Roblox Corporation</div>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const statusBox = $('status');
+function setStatus(message, kind='') {
+  statusBox.textContent = message;
+  statusBox.className = 'status' + (kind ? ' ' + kind : '');
+}
+function safeDate(raw) {
+  if (!raw) return 'Not provided';
+  const date = new Date(raw);
+  return Number.isNaN(date.getTime()) ? 'Not provided' : date.toLocaleDateString(undefined, {year:'numeric', month:'short', day:'numeric'});
+}
+async function requestJson(url) {
+  const response = await fetch(url, {headers:{'Accept':'application/json'}});
+  if (!response.ok) throw new Error('HTTP ' + response.status);
+  return response.json();
+}
+$('lookupForm').addEventListener('submit', async event => {
+  event.preventDefault();
+  const username = $('username').value.trim();
+  if (!username) return;
+  const btn = $('lookupBtn');
+  btn.disabled = true;
+  btn.textContent = 'Checking…';
+  $('results').classList.add('hidden');
+  setStatus('Looking up public Roblox profile…');
+  try {
+    const res = await fetch('/api/lookup', {
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({username})
+    });
+    if (!res.ok) throw new Error('Roblox API returned HTTP ' + res.status);
+    const body = await res.json();
+    if (!res.ok) throw new Error(body.error || 'Could not load public profile.');
+    const detail = body;
+    const user = body;
+    let avatarUrl = '';
+    try {
+      avatarUrl = user.avatarUrl || '';
+    } catch (_) {}
+    $('avatar').src = avatarUrl;
+    $('avatar').alt = 'Avatar of ' + (detail.name || user.name);
+    $('displayName').textContent = detail.displayName || user.displayName || user.name;
+    $('handle').textContent = '@' + (detail.name || user.name);
+    $('userId').textContent = 'User ID: ' + user.id;
+    $('created').textContent = 'Created: ' + safeDate(detail.created);
+    $('description').textContent = detail.description || '(No description)';
+    $('detailUsername').textContent = detail.name || user.name;
+    $('detailDisplay').textContent = detail.displayName || user.displayName || user.name;
+    $('detailCreated').textContent = safeDate(detail.created);
+    $('verified').textContent = detail.hasVerifiedBadge ? 'Yes' : 'No';
+    $('profileState').textContent = 'Found';
+    $('profileLink').href = 'https://www.roblox.com/users/' + user.id + '/profile';
+    $('results').classList.remove('hidden');
+    setStatus('Profile loaded successfully.', 'ok');
+  } catch (err) {
+    const message = String(err?.message || err);
+    if (message.includes('Failed to fetch') || message.includes('NetworkError')) {
+      setStatus('Could not reach Roblox from this local file. Network or browser CORS restrictions may block it. Open the official profile, or host this page on a small HTTPS server.', 'error');
+    } else {
+      setStatus(message, 'error');
+    }
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '⌕  Check account';
+  }
+});
+</script>
+</body>
+          </html>
